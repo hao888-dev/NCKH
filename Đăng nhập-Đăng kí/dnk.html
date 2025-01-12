@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập trực tiếp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .login-container {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      height: 200px;
+    }
+    .login-container h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+    .login-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .login-btn img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    .google-btn {
+      background-color: #4285f4;
+      color: white;
+    }
+    .google-btn:hover {
+      background-color: #357ae8;
+    }
+    .facebook-btn {
+      background-color: #1877f2;
+      color: white;
+    }
+    .facebook-btn:hover {
+      background-color: #155dbb;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Đăng nhập</h1>
+    <button class="login-btn google-btn" onclick="googleLogin()">
+      <img src="./Picture/search.png" alt="Google Logo">
+      Đăng nhập bằng Google
+    </button>
+    <button class="login-btn facebook-btn" onclick="facebookLogin()">
+      <img src="./Picture/facebook (1).png" alt="Facebook Logo">
+      Đăng nhập bằng Facebook
+    </button>
+  </div>
+
+  <script>
+    function googleLogin() {
+      alert('Đăng nhập bằng Google!');
+    }
+    
+    function facebookLogin() {
+      alert('Đăng nhập bằng Facebook!');
+    }
+  </script>
+</body>
+</html>
