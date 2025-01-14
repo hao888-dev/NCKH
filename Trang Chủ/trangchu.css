@@ -1,0 +1,99 @@
+
+.image{
+    width:1250px ;
+    height: 380px;
+   margin-top: 120px;
+   margin-left: 60px;
+    border-radius: 30px;
+    margin-right: 0px;
+
+}
+b{
+    background-color: #003c5f; /* Màu xanh dương */
+    border: none;
+    color: white;
+    padding: 15px 22px ;
+   text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 16px;
+    margin: 20px 60px 10px 150px;
+    border-radius: 20px;
+    font-family: "tahoma";
+    width: auto;
+    height: auto;
+    justify-items: center;
+}
+.container h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0 0 -20px;
+    text-align: center;
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+.image1 img {
+    width: 320px;
+    height: 300px;
+    margin-left: 30px;
+    display: inline;
+    margin-bottom: 10px;
+}
+p{
+    color: #000;
+text-align: center;
+font-family: "tahoma";
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+margin: -30px 50px 2px 30px;
+}
+.foter p{
+    background-color: #6C7A89;
+    color: white;
+    text-align: center;
+    font-size: 14px; 
+    margin: 0;
+    margin-top: 28px;
+}
+.infomation{
+    font-family: tahoma;
+  background-color:#273843;
+ display: flex;
+ justify-content: space-between;
+  color: white;
+ margin: 0;
+}
+.infomation img{
+    width:300px;
+    margin-top: -50px;
+    margin-left: 220px;
+ 
+}
+.infomation h2{
+margin:0;
+font-family:sans-serif;
+font-size: 20px;
+
+}
+.infomation li{
+    font-family: tahoma;
+    margin-left: 25px;
+    align-items: center;
+}
+.infomation p{
+    color: white;
+    font-size: medium;
+    margin: 5px;
+    margin-left: -50px;
+}
+.n1{
+    list-style-type: none;
+}
+.n1::before{
+    content: "+";
+    padding: 2px;
+}
