@@ -470,7 +470,7 @@ body {
     content: ''; /* Tạo một phần tử giả */
     position: absolute;
     top: -10%;
-    right: 15%; /* Đặt đường kẽ sát bên phải của avatar */
+    right: 10%; /* Đặt đường kẽ sát bên phải của avatar */
     height: 550px;
     width: 2px;
     background-color: #888888; /* Màu của đường kẽ dọc */
@@ -501,18 +501,35 @@ body {
     margin-top: 10px; /* Thêm khoảng cách giữa avatar và input */
 }
 
-.logout-btn{
-    position: absolute;
-    top: 75%; /* Căn avatar cách từ trên xuống một khoảng */
-    left: 14%; /* Căn avatar vào phần bên trái */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    z-index: 1; 
+.logout-btn {
+    position: absolute; /* Đảm bảo nút luôn cố định ở vị trí nhất định trên trang */
+    bottom: 2%; /* Căn từ đáy trang lên một khoảng */
+    right: 1%; /* Căn từ bên phải của trang */
     border-radius: 20px;
-    background-color: #050e18;
+    background-color: #8b0017;
     color: #ffffff;
-    width: 10%;
+    padding: 10px 20px; /* Điều chỉnh padding cho nút */
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000; /* Đảm bảo nút luôn ở trên các phần tử khác */
+}
+
+#changeAvatarBtn {
+    padding: 10px 20px;
+    background-color: #050e18;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: auto;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#changeAvatarBtn:hover {
+    background-color: #333;
+}
+
+#avatarUpload {
+    display: none;
 }
