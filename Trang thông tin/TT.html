@@ -61,12 +61,14 @@
         <div class="header-box">
             <div class="header-text">Thông tin cá nhân</div>
         </div>
+        <button class="logout-btn" onclick="logout()">Đăng xuất</button>
         <div class="content">
             <div class="form-avatar">
                 <div class="avatar-image">
                     <img id="avatarPreview" src="./picture/avtuser.png" alt="Avatar" class="avatar-img">
                 </div>
-                <input type="file" id="avatarUpload" accept="image/*" onchange="previewAvatar()" />
+                <button type="button" id="changeAvatarBtn" onclick="document.getElementById('avatarUpload').click();">Thay đổi avatar</button>
+                <input type="file" id="avatarUpload" accept="image/*" onchange="previewAvatar()" style="display: none;" />
             </div>            
             <div class="form-container">
                 <div class="form-info">
@@ -96,7 +98,6 @@
                         <button id="editButton" onclick="editInfo()">Thay đổi thông tin</button>
                     </form>
                 </div>
-                <button class="logout-btn" onclick="logout()">Đăng xuất</button>
             </div>
         </div>
 </body>
