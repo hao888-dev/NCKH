@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Cáo</title>
+    <link rel="stylesheet" href="bc.css">
+</head>
+<body>
+    <header>
+        <div class="thanh-tren">
+            <h2 class="chu-chinh">MATH4IT - Nơi tổng hợp tài liệu số toán học</h2>
+            <div class="box1"><div class="user-avt"> <img src="/picture/avtuser.png" alt="user" class="picture1"> </div> <div class="user-info">username</div></div>
+            <div class="box2">
+                <div class="box2_1" style="color:rgb(255, 255, 255)"><a>Trang chủ</a></div>
+                <div class="box2_1" style="color: rgb(255, 255, 255);"><a>Thông tin</a></div>
+                <div class="box2_1" style="color:yellow;"><a>Báo cáo</a></div>
+                <div class="box2_1" style="color: rgb(255, 255, 255);"><a>Đăng bài</a></div>
+            </div>
+            
+        <div class="navbar">
+            <a>Bài tập</a>
+            <a>Tài liệu</a>
+            <a>Đề thi</a>
+            <a>Bài viết</a>
+        </div>
+    </header>
+    <body>
+        <script src="bc.js"></script>
+        <div class="menu" onclick="hienThiMenu()">
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+        </div>
+    </div>
+        <div id="thanh-dieu-huong" class="thanh-dieu-huong">
+            <div class="ho-so">
+                <img src="/picture/avtuser.png" alt="Avatar" class="avatar">
+                <div class="ten-dang-nhap">Username</div>
+            </div>
+            <ul class="link-thanh-dieu-huong">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Thông tin</a></li>
+                <li><a href="#">Báo cáo</a></li>
+                <li><a href="#">Đăng bài</a></li>
+            </ul>
+            <div class="thanh-ben">
+                <ul class="link-thanh-ben">
+                    <li><a href="#">Bài tập</a></li>
+                    <li><a href="#">Tài liệu</a></li>
+                    <li><a href="#">Đề thi</a></li>
+                    <li><a href="#"">Bài viết</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+        <div class="notification-bell">
+            <img src="/picture/Bell 3.png" alt="Notification Bell">
+        </div>
+        <div class="container">
+            <h2>Báo cáo sự cố</h2>
+            <form>
+              <label for="name">Họ tên:</label>
+              <input type="text" id="name" name="name" placeholder="Nhập họ tên...">
+        
+              <label for="reason">Lý do:</label>
+              <input type="text" id="reason" name="reason" placeholder="Nhập lý do...">
+        
+              <label for="description">Mô tả thêm (nếu có):</label>
+              <textarea id="description" name="description" placeholder="Mô tả..."></textarea>
+        
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="link">
+          <p>Hãy xem thử các phương pháp mà chúng tôi đề xuất trong trường hợp web lỗi nhé!
+           </p> 
+           <a href="#">Link</a>
+          </div>
+</body>
+</html>
