@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .report-container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+            max-width: 600px;
+            width: 100%;
+        }
+        .report-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .input-field {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .input-field input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .input-field label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            color: #aaa;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+
+        .input-field input:focus {
+            border-color: #007BFF;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .input-field input:focus + label,
+        .input-field input:not(:placeholder-shown) + label {
+            top: -10px;
+            left: 10px;
+            font-size: 12px;
+            color: #007BFF;
+            background-color: white;
+            padding: 1%;
+        }
+
+        .report-textarea {
+            height: 300px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            resize: none;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .report-textarea:focus {
+            border-color: #007BFF;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .submit-btn {
+            display: block;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin: 20px auto 0;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <div class="report-title">Báo cáo</div>
+        
+        <!-- Form nhập tên người báo cáo và nội dung -->
+        <form action="#" method="POST">
+            <!-- Input tên người báo cáo với floating label -->
+            <div class="input-field">
+                <input type="text" id="reporter-name" name="reporter-name" placeholder=" " required>
+                <label for="reporter-name">Nhập tên người báo cáo</label>
+            </div>
+            
+            <!-- Textarea nhập nội dung báo cáo -->
+            <textarea class="report-textarea" name="report-content" placeholder="Nhập nội dung báo cáo của bạn..." required></textarea>
+            
+            <!-- Nút gửi báo cáo -->
+            <button type="submit" class="submit-btn">Gửi Báo Cáo</button>
+        </form>
+    </div>
+</body>
+</html>
