@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng tài liệu</title>
+    <link rel="stylesheet" href="tl.css">
+</head>
+<body> 
+     <header>
+        <div class="thanh-tren">
+            <h2 class="chu-chinh">MATH4IT - Nơi tổng hợp tài liệu số toán học</h2>
+            <div class="box1"><div class="user-avt"> <img src="./picture/avtuser.png" alt="user" class="picture1"> </div> <div class="user-info">username</div></div>
+            <div class="box2">
+                <div class="box2_1" style="color:rgb(255, 255, 255)"><a>Trang chủ</a></div>
+                <div class="box2_1" style="color: rgb(255, 255, 255);"><a>Thông tin</a></div>
+                <div class="box2_1" style="color:rgb(255, 255, 255)"><a>Báo cáo</a></div>
+                <div class="box2_1" style="color: yellow;"><a>Đăng bài</a></div>
+            </div>
+            
+        <div class="navbar">
+            <a>Bài tập</a>
+            <a>Tài liệu</a>
+            <a>Đề thi</a>
+            <a>Bài viết</a>
+        </div>
+    </header>
+    <body>
+        <script src="tl.js"></script>
+        <div class="menu" onclick="hienThiMenu()">
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+        </div>
+    </div>
+        <div id="thanh-dieu-huong" class="thanh-dieu-huong">
+            <div class="ho-so">
+                <img src="./picture/avtuser.png" alt="Avatar" class="avatar">
+                <div class="ten-dang-nhap">Username</div>
+            </div>
+            <ul class="link-thanh-dieu-huong">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Thông tin</a></li>
+                <li><a href="#">Báo cáo</a></li>
+                <li><a href="#">Đăng bài</a></li>
+            </ul>
+            <div class="thanh-ben">
+                <ul class="link-thanh-ben">
+                    <li><a href="#">Bài tập</a></li>
+                    <li><a href="#">Tài liệu</a></li>
+                    <li><a href="#">Đề thi</a></li>
+                    <li><a href="#">Bài viết</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+        <div class="notification-bell">
+            <img src="./picture/Bell 3.png" alt="Notification Bell">
+        </div>
+
+<div class="container0_1" >
+    <h1>Hãy Đăng Lên Tài liệu của bạn!</h1>
+  <div class="container">
+    <form>
+      <label for="name">Tên người đăng:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="divide">Phân loại thư mục</label>
+      <input type="text" name="divide" id="divide" required>
+
+      <label for="reason">Phân loại:</label>
+      <select required>
+        <option value="">-- Chọn bài học --</option>
+        <option value="1">Tài liệu</option>
+        <option value="2">Bài tập</option>
+      </select>
+      <label for="lesson">Tên bài:</label>
+
+      <select required>
+        <option value="">-- Chọn bài học --</option>
+        <option value="1">Bài 1: Giới thiệu vật lý</option>
+        <option value="2">Bài 2: Nguyên tử và phân tử</option>
+        <option value="3">Bài 3: Phản ứng hóa học</option>
+        <option value="4">Bài 4: Hệ mặt trời</option>
+        <option value="5">Bài 5: Động vật và thực vật</option>
+        <option value="6">Bài 6: Các nền văn minh cổ đại</option>
+        <option value="7">Bài 7: Chiến tranh thế giới thứ nhất</option>
+        <option value="8">Bài 8: Tìm hiểu đại dương</option>
+        <option value="9">Bài 9: Lịch sử Việt Nam</option>
+        <option value="10">Bài 10: Toán học cơ bản</option>
+        <option value="11">Bài 11: Ngữ pháp tiếng Anh</option>
+        <option value="12">Bài 12: Tìm hiểu lập trình</option>
+        <option value="13">Bài 13: Sinh thái học</option>
+        <option value="14">Bài 14: Công nghệ hiện đại</option>
+    </select>
+
+      <label for="video">Video bài giảng (nếu có):</label >
+      <input type="url" id="video" name="video"
+      pattern="https://.*" required>
+
+      <label for="file">File bài giảng:</label>
+      <input type="file" id="file" name="file" required>
+
+      <label for="tailieu">
+        Tài liệu ôn & bài tập (nếu có): 
+      </label>
+      <input type="text" id="tailieu" name="tailieu" required>
+
+      <label for="description">Mô tả thêm (nếu có):</label>
+      <textarea id="description" name="description" ></textarea required>  
+        <button type="submit">Đăng</button>  
+    </form>
+  </div>
+</div>
+</body>
+</html>
