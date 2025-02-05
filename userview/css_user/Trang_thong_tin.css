@@ -1,0 +1,267 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Koh Santepheap, sans-serif;
+    box-sizing: border-box;
+}
+
+.container0 {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: up 1s ease;
+}
+
+@keyframes up{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+.content {
+    font-size: 18px;
+    color: black;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.header-box {
+    width: 500px; 
+    height: 70px;
+    background: #005284; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 30px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+
+}
+
+.header-text {
+    text-align: center; 
+    color: white;
+    font-size: 30px; 
+    font-weight: 700px;
+    line-height: 60px;
+}
+
+.title {
+    color: black;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 20px;
+    display: block;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.footer-text {
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+    color: black;
+}
+
+@media (max-width: 1439px) {
+    .container0{
+        margin-top: 0;
+    }
+    .header-box {
+        width: 400px;
+    }
+
+    .header-text {
+        font-size: 30px;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+    }
+}
+
+
+.form-container {
+    width: 80%; 
+    justify-content: space-between;
+    max-width: 1000px; 
+    height: 630px; 
+    background: rgba(255, 255, 255, 0.934);
+    display: flex;
+    align-items: flex-start; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.352);
+    margin: 0 auto; 
+    padding: 20px;
+    margin-top: 50px; 
+    box-sizing: border-box; 
+    position: relative; 
+}
+
+.form-info {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+
+
+.form-info label {
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.form-info input[type="text"],
+.form-info input[type="email"],
+.form-info input[type="date"] {
+    width: 100%; 
+    padding: 8px 12px; 
+    margin-top: 2px; 
+    margin-bottom: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    font-size: 14px; 
+    height: 40px; 
+}
+
+.box09_1{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.form-info button {
+    margin-top: 2%;
+    padding: 15px;
+    background-color: #050e18;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 70%;
+    font-size: 17px;
+    transition: all ease 0.3s;
+}
+
+.form-info button:hover {
+    background-color: #000000c5;
+}
+
+.form-info button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+.form-avatar {
+    width:30%; 
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    padding:30px;
+    z-index: 1; 
+    border-right:1px solid black ;
+}
+
+.avatar-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #00000000;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+.avatar-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.form-avatar input[type="file"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 10px; 
+}
+
+.logout-btn {
+    width: 150px;
+    height: 50px;
+    right: 1%; 
+    border-radius: 20px;
+    background-color: #88071c;
+    color: #ffffff;
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    margin-top: 3%; 
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover{
+
+    background-color: #88071cd6;
+
+}
+
+#changeAvatarBtn {
+    padding: 10px 20px;
+    background-color: #050e18;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: auto;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#changeAvatarBtn:hover {
+    background-color: #333;
+}
+
+#avatarUpload {
+    display: none;
+}
