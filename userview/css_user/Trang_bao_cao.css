@@ -1,0 +1,163 @@
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.container0_0{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.container {
+    margin: 20px;
+    margin-top: 10%;
+    width: 50%;
+    height: 60%;
+    border: solid rgba(0, 0, 0, 0) 1px;
+    border-radius: 10px;
+    background-color: #3d669b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeinup ease 1s;
+  }
+  
+  .container h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .k1{
+    position: relative; 
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+ 
+
+  input, textarea {
+    width: 90%;
+    padding:10px;
+    padding-left: 15px;
+    margin-top: 1%;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    font-size: 16px;
+  }
+
+  
+
+label{
+    position: absolute;
+    left: 8%;
+    top:50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all ease 0.5s;
+    color: rgb(131, 131, 131);
+}
+
+.k1 input:focus + label,input:valid + label{
+    top:10%;
+    font-size: 17px;
+    background-color: #3d669b;
+    color:#ffffff;
+    padding: 5px 15px 5px 15px;
+    border-radius: 6px ;
+    border: solid white 2px;
+}
+
+  textarea {
+    height: 150px;
+    resize: none;
+    margin-bottom: 9%;
+  }
+
+  button {
+    width: 60%;
+    padding: 15px;
+    background-color: #10a1ea;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #8dd5ff;
+  }
+  
+  .link {
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    font-size: 27px;
+    margin-bottom: -10px;
+  }
+
+  .link a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #1598d0;
+  }
+
+ @media (max-width:1000px){
+  .container{
+    width: 80%;
+  }
+  .container h2 {
+    font-size: 20px;
+  }
+  .k1{
+    width: 90%;
+  }
+  textarea{
+    width: 80%;
+  }
+ }
+
+  @keyframes fadeinup {
+    0% {
+      opacity: 0; 
+      transform: translateY(50px); 
+    }
+    100% {
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  p{
+    margin: 30px;
+  }

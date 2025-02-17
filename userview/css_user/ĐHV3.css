@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header {
+    background-color: #0d699f;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 30px;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+}
+.user-avt img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.nav-links {
+    display: flex;
+    height: 100%;
+    width: 35%;
+    justify-content: space-between;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    height: 100%;
+    position: relative; 
+    padding-bottom: 5px;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 72, 116);
+    padding: 15px 0;
+}
+.nv1 a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative; 
+    padding-bottom: 5px; 
+}
+
+.nv1 a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white; 
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nv1 a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nv1 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 25px 0px 0px 25px;
+    flex-direction: column;
+}
+.menu div {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(0, 51, 109);
+    margin: 3px;
+}
+@media(max-width:1200px) {
+    header {
+        display: none;
+    }
+    .navbar {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+}
+.thanh-dieu-huong {
+position: fixed;
+top: 0;
+left: -25%;
+width: 230px;
+height: 100%;
+background: #085176;
+color: white;
+transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+padding-top: 20px;
+display: none;
+opacity: 0; 
+z-index: 1000; 
+flex-direction: column;
+}
+.j{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.thanh-dieu-huong .j img{
+    width: 20%;
+    height: 10%;
+    cursor: pointer;
+}
+
+.thanh-dieu-huong .ctrl {
+    padding-top: 40px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+.thanh-dieu-huong .ctrl a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.thanh-dieu-huong div a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.2);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+.thanh-dieu-huong div a:hover::before {
+    transform: scaleX(1);
+}
+.thanh-dieu-huong.show {
+    left: 0;
+    opacity: 1;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.379);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; 
+    z-index: 999; 
+}
+.overlay.show {
+    display: block;
+    opacity: 1; 
+}
